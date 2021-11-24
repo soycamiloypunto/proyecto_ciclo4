@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <title>Registro en el Sistema</title>
+    
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    
+    <link  rel="icon"   href="https://cdn-icons-png.flaticon.com/512/194/194931.png" type="image/png" />
+    <!--CSS Personalizado-->
+    <link rel="stylesheet" href="assets/css/registrar.css">
+</head>
+
+<body>
+    <div id="login">
+        <h3 class="text-center text-white pt-5">Proyecto Revista</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info">Crear Cuenta</h3>
+                            <div class="form-group">
+                                <label for="username" class="text-info">Nombre:</label><br />
+                                <input type="text" id="name" class="form-control" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="useremail" class="text-info">E-mail:</label><br />
+                                <input type="email" id="email" class="form-control" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Contraseña:</label><br />
+                                <input type="password" id="pass1" class="form-control" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordrepeat" class="text-info">Confirmar tu Contraseña:</label><br />
+                                <input type="password" id="pass2" class="form-control" required/>
+                            </div>
+                            <div class="form-group text-center">
+                                <input onclick="EnviarRegistro()"  class="btn btn-info btn-md" value="Crear" />                                
+                            </div>
+                            <div class="form-group text-center">
+                                <label for="remember-me" class="text-info">
+                                    <span>Ya tienes una cuenta? <a href="index.html" class="text-info">Inicia sesion aqui</a></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+ <script src="assets/js/functions.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</html>
